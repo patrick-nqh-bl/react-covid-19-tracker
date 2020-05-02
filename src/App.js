@@ -18,7 +18,9 @@ export class App extends Component {
 
   handleCountryChange = async (country) => {
     // fetch the data
+    const fetchedData = await fetchData(country);
     // set the state
+    this.setState({ data: fetchedData, country: country });
   };
 
   render() {

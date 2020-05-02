@@ -15,7 +15,9 @@ export const fetchData = async (country) => {
     } = await axios.get(changeableUrl);
 
     return { confirmed, recovered, deaths, lastUpdate };
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const fetchDailyData = async () => {
