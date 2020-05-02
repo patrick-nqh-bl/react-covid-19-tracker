@@ -5,6 +5,7 @@
 - classnames
 - react-chartjs-2
 - react-countup
+- chart.js
 
 3. Awesome function:
 
